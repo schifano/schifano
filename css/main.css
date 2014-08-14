@@ -1,25 +1,29 @@
 body {
 	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-	font-weight: 300;
-	background-color: #CE706D;
+	font-weight: 100;
+	background-color: #333;
 	padding: 0;
 	margin: 0;
 }
 h1 {
 	font-weight: 100;
 	text-align: center;
-	color: #333;
+	color: #f0f0f0;
 	font-style: none;
-	font-size: 2.0em;
+	font-size: 2.5em;
 }
 h2 {
 	font-weight: 100;
-	color: #333;
+	color: #f0f0f0;
 	font-size: 1.5em;
+}
+.subtitle {
+	color: #f0f0f0;
+	font-size: 1.2em;
+	text-align: center;
 }
 section.header {
 	width: 100%;
-	background-color: #CE706D;	
 	clear: both;
 	margin: 0;
 }
