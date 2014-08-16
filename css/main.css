@@ -36,28 +36,6 @@ section.header {
 	list-style: none;
 }
 
-/* ul.icons {
-	top: 15px;
-	right: 20px;
-}
-ul.icons li {
-	float: left;
-	position: relative;
-	display: block;
-	padding: 5px 10px 5px 10px;
-}
-*/
-
-/* p {
-	padding: 50px 10px 50px 10px;
-	color: #fff;
-	background-color: #a6a6a6;
-	width: 125px;
-	text-align: center;
-	font-size: 12pt;
-}
-*/
-
 p {
 	line-height: 25px;
 }
