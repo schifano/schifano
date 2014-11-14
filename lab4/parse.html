@@ -15,11 +15,25 @@ $.getJSON("http://schifano.github.io/schifano/widget.json", function( data ) {
 	console.log(data);
 	document.getElementById("parse").innerHTML =
 		data.Widget.debug +
-		image.alignment +
+		data.image.alignment +
 		data.image.hOffset +
 		data.image.name +
 		data.image.src +
 		data.image.vOffset;
+		
+		data.text.alignment +
+		data.text.data +
+		data.text.hOffset +
+		data.text.name +
+		data.text.onMouseUp +
+		data.text.size +
+		data.text.style +
+		data.text.vOffset +
+
+		data.window.height +
+		data.window.name +
+		data.window.title +
+		data.window.width;
 });
 </script>
 </body>
