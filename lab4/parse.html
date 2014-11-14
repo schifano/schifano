@@ -14,25 +14,25 @@
 $.getJSON("http://schifano.github.io/schifano/widget.json", function( data ) {
 	console.log(data);
 	document.getElementById("parse").innerHTML =
-		data.Widget.debug +
-		data.Widget.window.title +
-		data.Widget.window.name +
-		data.Widget.window.width +
-		data.Widget.window.height +
+		data.Widget.debug + "<br>" +
+		data.Widget.window.title + "<br>" +
+		data.Widget.window.name + "<br>" +
+		data.Widget.window.width + "<br>" +
+		data.Widget.window.height + "<br>" +
 
-		data.Widget.image.src +
-		data.Widget.image.name +
-		data.Widget.image.hOffset +
-		data.Widget.image.vOffset +
-		data.Widget.image.alignment +
+		data.Widget.image.src + "<br>" +
+		data.Widget.image.name + "<br>" +
+		data.Widget.image.hOffset + "<br>" +
+		data.Widget.image.vOffset + "<br>" +
+		data.Widget.image.alignment + "<br>" +
 		
-		data.Widget.text.data +
-		data.Widget.text.size +
-		data.Widget.text.style +
-		data.Widget.text.name +
-		data.Widget.text.hOffset +
-		data.Widget.text.vOffset +
-		data.Widget.text.alignment +
+		data.Widget.text.data + "<br>" +
+		data.Widget.text.size + "<br>" +
+		data.Widget.text.style + "<br>" +
+		data.Widget.text.name + "<br>" +
+		data.Widget.text.hOffset + "<br>" +
+		data.Widget.text.vOffset + "<br>" +
+		data.Widget.text.alignment + "<br>" +
 		data.Widget.text.onMouseUp;
 });
 </script>
