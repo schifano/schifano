@@ -13,8 +13,8 @@
 <script>
 $.getJSON("http://schifano.github.io/schifano/widget.json", function( data ) {
 	console.log(data);
+	document.getElementById("parse").innerHTML = data.Widget;
 });
-document.getElementById("parse").innerHTML = data.Widget;
 </script>
 </body>
 </html>
