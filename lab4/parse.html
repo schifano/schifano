@@ -15,8 +15,8 @@ $.getJSON("http://schifano.github.io/schifano/widget.json", function( data ) {
 	console.log(data);
 	document.getElementById("parse").innerHTML =
 		data.Widget.debug +
-		data.window.title +
-		data.window.name +
+		data.Widget.window.title +
+		data.Widget.window.name +
 		data.window.width +
 		data.window.height +
 
