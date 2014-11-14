@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Parse JSON</title>
+	<script src="jquery-1.11.1.min.js"></script>
+</head>
+<body>
+
+<h2>Create Object from JSON String</h2>
+
+<p id="parse"></p>
+
+<script>
+$.getJSON("http://schifano.github.io/schifano/widget.json", function( data ) {
+	console.log(data);
+});
+</script>
+</body>
+</html>
