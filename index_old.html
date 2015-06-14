@@ -1,0 +1,60 @@
+<!doctype html>
+<html>
+<head>
+	<title>schifano</title>
+	<link href="styles/output.css" rel="stylesheet">
+	<script src="scripts/masonry.pkgd.js"></script>
+</head>
+<body>
+
+<nav>
+	<ul class="no-bullet icons">
+		<li><img src="images/ic_email.svg" alt="Email address"></li>
+		<li><img src="images/ic_linkedin.svg" alt="Linked In"></li>
+		<li><img src="images/ic_github.svg" alt="Git Hub"></li>
+		<li><img src="images/ic_twitter.svg" alt="Twitter"></li>
+	</ul>
+</nav>
+<section class="header">
+	<h1>RACHEL A SCHIFANO</h1>
+	<p class="subtitle">Programmer &amp; Artist</p>
+</section>
+
+<!--
+<div class="row">
+	<div class="col-left">
+		<div class="story">
+		<h2>Young Padawan</h2>
+		<p>There is a lot of technology in the world. What are you interested in? What will be your niche? Or if you are like me, maybe you want a taste of a little bit of everything.</p>
+		</div>
+	</div>
+	<div class="col-right">
+		<div class="resources">
+		<h2>Projects</h2>
+		<ul>
+			<li>Unix/Linux Commands</li>
+		</ul>
+		</div>
+	</div>
+</div>
+-->
+
+<div id="container">
+  <div class="item">VINYLS INspects Your Legacy Source code</div>
+  <div class="item w2">CodeLab</div>
+  <div class="item">Wizards of the Future: Code Your Own Adventure</div>
+  <div class="item">Millennium Girls</div>
+  <div class="item w2"></div>
+  <div class="item"></div>
+</div>
+
+
+<script>
+var container = document.querySelector('#container');
+var msnry = new Masonry( container, {
+  // options
+  columnWidth: 200,
+  itemSelector: '.item'
+});
+</script>
+</body>
