@@ -1,14 +1,28 @@
 <!doctype html>
-<html ng-app="sounds"
+<html lang="en">
 <head>
 	<title>Sounds</title>
+	<meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
 	<link rel="stylesheet" href="css/sounds.css">
 </head>
 <!-- Directive and the name of the function being called -->
-<body ng-controller="SoundsController as sounds">
+<body ng-app="sounds" ng-controller="PlaylistController" ng-cloak>
 
 <h1>rachel selects</h1>
 
+  <ul ng-init="retrieveThings()">
+  	<li ng-repeat="thing in things">
+  		{{thing.name}} is {{thing.description}}
+  	</li>
+  </ul>
+
+<!-- Scripts -->
+<script src="scripts/angular.min.js"></script>
+<script src="scripts/app.js"></script>
+<script src="scripts/playlistController.js"></script>
+<script src="scripts/playlistService.js"></script>
 
 </body>
 </html>
