@@ -18,5 +18,8 @@ h1 {
 
 ul {
 	color: #fff;
+}
+
+ul li {
 	font-weight: lighter;
 }
