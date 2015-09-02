@@ -1,43 +1,43 @@
 body {
-	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+	font-family: "Avenir Next", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
 	font-weight: 100;
 	background-color: #333;
 	padding: 0;
-	margin: 0;
 }
+h1, h2, h3, .subtitle {
+	font-family: "Avenir Next", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+}
+
 h1 {
 	font-weight: 100;
 	text-align: center;
 	color: #f0f0f0;
 	font-style: none;
 	font-size: 3.5em;
+	margin-bottom: 0px;
 }
 h2 {
 	font-weight: 100;
-	color: #f0f0f0;
-	font-size: 1.5em;
+	font-size: 2.5em;
+	text-align: center;
+	color: #fff;
+}
+h3 {
+	color: #fff;
+	font-weight: 100;
 }
 .subtitle {
 	color: #f0f0f0;
-	font-size: 1.2em;
+	font-size: 2.3em;
 	text-align: center;
-}
-section.header {
-	width: 100%;
-	clear: both;
-	margin: 0;
-}
-.box_border {
-	border: 1px solid #CE706D;
-	color: #fff;
-	font-size: 15pt;
+	margin: 5px;
 }
 .no-bullet {
 	list-style: none;
 }
 
 p {
-	line-height: 25px;
+	line-height: 90%;
 }
 .col-left {
   width: 40%;
@@ -55,24 +55,12 @@ p {
   /* background-color: #44bb44; */ 
  }
 
-.row {
-  width: 100%;
-  clear: both;
-  display: table-row; }
-
-.story {
-  width: 60%;
-  padding: 20px;
-  margin-left: auto;
-  margin-right: auto; }
-
-.resources {
-  width: 60%;
-  padding: 20px;
-  margin-left: auto;
-  margin-right: auto; }
-
-
+.grid {
+	padding: 10px;
+	color: black;
+	font-weight: normal;
+	text-align: center;
+}
 .project {
 	width: 50%;
 	height: 200px;
@@ -80,4 +68,10 @@ p {
 
 .red {
 	background-color: #ff0040;
+}
+
+/* Sections */
+#projects {
+/*	background-color: #fff;*/
+	width: 100%;
 }
