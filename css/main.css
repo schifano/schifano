@@ -1,33 +1,39 @@
 body {
-	font-family: "Avenir Next", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+	font-family: -apple-system, BlinkMacSystemFont, Helvetica, Arial, sans-serif;
 	font-weight: 100;
-	background-color: #333;
 	padding: 0;
+	color: #000;
+}
+h1 {
+	padding-top: 50px;
+	text-align: center;
+	font-size: 60pt;
 }
 h1, h2, h3, .subtitle {
-	font-family: "Avenir Next", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+	font-weight: lighter;
+	color: gray;
+
 }
 
-h1 {
+/*h1 {
 	font-weight: 100;
 	text-align: center;
 	color: #f0f0f0;
 	font-style: none;
 	font-size: 3.5em;
 	margin-bottom: 0px;
-}
-h2 {
+}*/
+/*h2 {
 	font-weight: 100;
 	font-size: 2.5em;
 	text-align: center;
-	color: #fff;
+	color: gray;
 }
 h3 {
-	color: #fff;
+	color: gray;
 	font-weight: 100;
-}
+}*/
 .subtitle {
-	color: #f0f0f0;
 	font-size: 2.3em;
 	text-align: center;
 	margin: 5px;
