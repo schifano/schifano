@@ -94,3 +94,8 @@ p {
 /*	background-color: #fff;*/
 	width: 100%;
 }
+
+/* Pinterest */
+div.pinterest > span {
+	display: inline;
+}
