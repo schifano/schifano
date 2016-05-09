@@ -97,5 +97,5 @@ p {
 
 /* Pinterest */
 div.pinterest > span {
-	display: inline;
+	display: inline !important;
 }
