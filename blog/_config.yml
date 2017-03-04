@@ -20,8 +20,6 @@ baseurl: "/schifano/blog" # the subpath of your site, e.g. /blog
 production_url : http://schifano.github.io/schifano/blog
 url: "http://schifano.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 
-relative_permalinks: false
-
 twitter_username: rachelschifano
 github_username:  schifano
 
