@@ -16,8 +16,8 @@
 title: also
 #email: your-email@domain.com
 #description: > # this means to ignore newlines until "baseurl:"
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://schifano.github.io/schifano/" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: "/schifano" # the subpath of your site, e.g. /blog
+url: "http://schifano.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: rachelschifano
 github_username:  schifano
 
