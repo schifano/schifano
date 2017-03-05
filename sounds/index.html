@@ -14,7 +14,7 @@
 
   <ul ng-init="retrieveThings()">
   	<li ng-repeat="thing in things">
-  		{{thing.permalink_url}}
+  		<a href="{{thing.permalink_url}}">{{thing.permalink_url}}</a>
   	</li>
   </ul>
 
