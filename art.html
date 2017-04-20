@@ -6,45 +6,124 @@
     <link href="public/css/style.css" rel="stylesheet">
     <!-- <link rel="shortcut icon" href="favicon.png"> -->
     <style>
-			.grid-item {
-			  float: left;
-			  width: 80px;
-			  height: 60px;
-			  border: 2px solid hsla(0, 0%, 0%, 0.5);
-			}
+* { box-sizing: border-box; }
 
-			.grid-item--width2 { width: 160px; }
-			.grid-item--height2 { height: 140px; }
+/* force scrollbar */
+html { overflow-y: scroll; }
 
-						/* fluid 5 columns */
-			.grid-sizer,
-			.grid-item { width: 20%; }
-			/* 2 columns */
-			.grid-item--width2 { width: 40%; }
+body { font-family: sans-serif; }
+
+/* ---- grid ---- */
+
+.grid {
+  background: #DDD;
+}
+
+/* clear fix */
+.grid:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+/* ---- .grid-item ---- */
+
+.grid-sizer,
+.grid-item {
+  width: 33.333%;
+}
+
+.grid-item {
+  float: left;
+}
+
+.grid-item img {
+  display: block;
+  width: 100%;
+}
+
     </style>
 </head>
 
 <body>
 
+<h1>Art</h1>
+
 <div class="grid">
-  <!-- width of .grid-sizer used for columnWidth -->
+	<!-- width of .grid-sizer used for columnWidth -->
   <div class="grid-sizer"></div>
-  <div class="grid-item"></div>
-  <div class="grid-item grid-item--width2"></div>
-  ...
+  <div class="grid-item">
+    <img src="images/art/airplane.jpg" alt="N171MA">
+  </div>
+  <div class="grid-item">
+    <img src="images/art/prisma.jpg" alt="The Way to the Next World">
+  </div>
+  <div class="grid-item">
+    <img src="images/art/pumpkin.jpg" alt="Mario 64 Pumpkin">
+  </div>
+  <div class="grid-item">
+    <img src="images/art/room.jpg" alt="The Warmth of Clouds">
+  </div>
+  <div class="grid-item">
+    <img src="images/art/farm-house.jpg" alt="Farm">
+  </div>
+  <div class="grid-item">
+    <img src="images/art/mask-front.jpg" alt="Korean Dream Mask front">
+  </div>
+  <div class="grid-item">
+    <img src="images/art/mask-back.jpg" alt="Korean Dream Mask back">
+  </div>
+  <div class="grid-item">
+    <img src="images/art/cars.jpg" alt="Toy Cars">
+  </div>
+  <div class="grid-item">
+    <img src="images/art/graphite.jpg" alt="Heart of Darkness">
+  </div>
+  <div class="grid-item">
+    <img src="images/art/cupcake1.jpg" alt="Vanilla cupcake">
+  </div>
+  <div class="grid-item">
+    <img src="images/art/cupcake2.jpg" alt="Chocolate and nuts cupcake">
+  </div>
+  <div class="grid-item">
+    <img src="images/art/cupcake3.jpg" alt="Red velvet cupcake">
+  </div>
+<!--   <div class="grid-item">
+    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/contrail.jpg" />
+  </div>
+  <div class="grid-item">
+    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/golden-hour.jpg" />
+  </div>
+  <div class="grid-item">
+    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/flight-formation.jpg" />
+  </div> -->
 </div>
 
-
 	<script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+	<script src="https://unpkg.com/imagesloaded@4.1/imagesloaded.pkgd.min.js"></script>
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 	<script>
-		$('.grid').masonry({
-		  // set itemSelector so .grid-sizer is not used in layout
-		  itemSelector: '.grid-item',
-		  // use element for option
-		  columnWidth: '.grid-sizer',
-		  percentPosition: true
-		})
+// 		$('.grid').masonry({
+//   // set itemSelector so .grid-sizer is not used in layout
+//   itemSelector: '.grid-item',
+//   // use element for option
+//   columnWidth: '.grid-sizer',
+//   percentPosition: true
+// })
+
+// init Isotope
+var grid = document.querySelector('.grid');
+
+var msnry = new Masonry( grid, {
+  itemSelector: '.grid-item',
+  columnWidth: '.grid-sizer',
+  percentPosition: true
+});
+
+imagesLoaded( grid ).on( 'progress', function() {
+  // layout Masonry after each image loads
+  msnry.layout();
+});
 	</script>
 </body>
 </html>
