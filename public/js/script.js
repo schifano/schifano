@@ -12,36 +12,47 @@ $(document).ready(function () {
 
 	var wto;
 
-	$('body').keyup(function(e) {
+	var handleSlides = function(e) {
 
-		if(e.keyCode == 37 || e.keyCode == 38 || e.keyCode == 39 || e.keyCode == 40) {
+			console.log('our event', e);
+
+		if(e.keyCode == 37 || e.keyCode == 38 || e.keyCode == 39 || e.keyCode == 40 || e.type == 'click') {
 			$('.version-text').fadeOut(500);
-			$('.description-text').fadeOut(500);	
+			$('.description-text').fadeOut(500);
+			$('.header-text').fadeOut(500);	
 		}
-
 
 		clearTimeout(wto);
 		wto = setTimeout(function() {
 			var index;
-			if(e.keyCode == 37 || e.keyCode == 38 || e.keyCode == 39 || e.keyCode == 40) {
+			if(e.keyCode == 37 || e.keyCode == 38 || e.keyCode == 39 || e.keyCode == 40 || e.type == 'click') {
 				index = $("#impress div").index($(".present"));
-				var descText = $('#impress div:nth-child('+index+')').attr("description");
+				console.log("######INDEX: ", index);
+
+				// var descText = $('#impress div:nth-child('+index+')').attr("description");
+				var descText = document.querySelectorAll("#impress div .step")[index-1].getAttribute("description")
+				var headerText = document.querySelectorAll("#impress div .step")[index-1].getAttribute("header")
 				$('.version-text').text("V" + index);
 				$('.description-text').text(descText);
+				$('.header-text').text(headerText);
 
 				$('.version-text').fadeIn(500);
 				$('.description-text').fadeIn(500);
-			}
-				
+				$('.header-text').fadeIn(500);	
+			}		
 		}, 500)
+	};
 
-	});
+	$('body').click(handleSlides);
+	$('body').keyup(handleSlides);
 
-	$('.frame').click(function() {
-		$('.frame').toggleClass("night");
-		$('.night-mode').toggleClass("invisible");
-		$('.day-mode').toggleClass("invisible")
-	})
+
+
+	// $('.frame').click(function() {
+	// 	$('.frame').toggleClass("night");
+	// 	$('.night-mode').toggleClass("invisible");
+	// 	$('.day-mode').toggleClass("invisible")
+	// })
 
 	impress().init();
 
