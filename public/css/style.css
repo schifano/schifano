@@ -372,12 +372,10 @@ img {
 }
 /* DESCRIPTION */
 
-/*.header {
-  text-align: right;
-  width: 450px;
-  margin-left: -480px;
-  margin-top: 84px;
-}*/
+.header-text {
+  font-weight: 470;
+  font-size: 3.2em;
+}
 
 .description {
   text-align: right;
@@ -387,10 +385,8 @@ img {
 }
 
 .description-text {
-
   font-size: 1.5em;
-  font-weight: 700;
-
+  font-weight: 400;
 }
 
 .info-bottom-left {
