@@ -395,7 +395,7 @@ img {
 
 .info-bottom-left {
   position: absolute;
-  bottom: 40px;
+  bottom: 60px;
   left: 60px;
   text-align: left;
   text-transform: uppercase;
@@ -557,6 +557,6 @@ body { font-family: sans-serif; }
 
 /* Scrollable */
 .scrollable {
-    height: 625px; /* or any value */
+    height: 650px; /* or any value */
     overflow-y: auto;
 }
