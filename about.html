@@ -4,12 +4,20 @@
     <meta charset="utf-8" />
     <title>About</title>
     <link href="public/css/style.css" rel="stylesheet">
-    <link href="bootstrap-3.3.7-dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- <link href="bootstrap-3.3.7-dist/css/bootstrap.min.css" rel="stylesheet"> -->
+    <!-- <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"> -->
+    <!-- <link rel="stylesheet" type="text/css" href="css/main.css"> -->
+    <style>
+      /* Pinterest */
+div.pinterest > span {
+  display: inline !important;
+}
+    </style>
 </head>
 
 <body>
 
-<div class="scrollable">
+<!-- <div class="scrollable">
   <div class="row">
 
     <div class="col-sm-6 col-md-4">
@@ -48,6 +56,13 @@
 
 </div> <!-- end scrollable -->
 
+
+<!-- Interests -->
+<div class="pinterest" style="text-align: center;" id="pinterest-widget">
+  <a data-pin-do="embedBoard" data-pin-board-width="400" data-pin-scale-height="500" data-pin-scale-width="60" href="https://www.pinterest.com/rschifano/interests/"></a>
+</div>
+
+
   <!-- FOOTER -->
   <div class="info-bottom-left">
   		<p><a href="index-new.html">Apps</a></p>
@@ -65,7 +80,13 @@
   </div>
 
   <!-- Script -->
-  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-  <script src="bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+  <!-- <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+  <script src="bootstrap-3.3.7-dist/js/bootstrap.min.js"></script> -->
+
+  <!-- Scripts -->
+  <script src="http://code.jquery.com/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script async defer src="http://assets.pinterest.com/js/pinit.js"></script>
+
 </body>
 </html>
