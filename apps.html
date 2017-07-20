@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>Rachel Schifano</title>
+    <link href="public/css/style.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+    <!-- Favicon -->
+</head>
+
+<body>
+
+    <!-- FRAME + DESCRIPTION -->
+    <div class="frame">
+        <div class="description">
+            <h1 class="header-text">Stuffy Time</h1>
+            <p class="description-text">Easter Egg.</p>
+        </div>
+    </div>
+
+
+    <!-- SLIDES -->
+    <div id="impress">
+        <div class="step slide" data-y="-1500" 
+        header="Stuffy Time" 
+        description="Stuffy Time is a physics simulated skill crane game I originally built using SpriteKit and Xcode Playgrounds for the 2017 Apple WWDC Scholarship. The game is under further development for the App Store.">
+            <img class="image-test" src="images/apps/stuffy-time.gif" width="275px">
+        </div>
+
+        <div class="step slide" data-y="-1500" 
+        header="METAR Parser" 
+        description="A METAR (Meteorological Terminal Aviation Routine Weather Report) provides information to pilots regarding the actual weather condition that has been noticed at a specified time at a particular location. The app retrieves a raw report from the Aviation Weather Center API and prases data using SWXMLHash into readable segments for pilots.">
+            <img class="image-test" src="images/apps/metar-parser.gif" width="275px">
+        </div>
+
+        <div class="step slide" data-y="-1500" 
+        header="About Me" 
+        description="&quot;About Me&quot; is an app that showcases my personality and ambitions built for the 2016 Apple WWDC Scholarship. Inspired by the Kardashian apps, it uses swiping and gesture recognition for navigation. Included is a sticker keyboard extension with hand-drawn images relevant to my personality.">
+            <img class="image-test" src="images/apps/about-me.gif" width="275px">
+        </div>
+
+        <div class="step slide" data-y="-1500" 
+        header="Meme Me" 
+        description="Meme Me creates memes. Take photos or select from an album to edit photos into memes and send them to friends. This app demonstrates iOS fundamentals.">
+            <img class="image-test" src="images/apps/meme-me.gif" width="275px">
+        </div>
+    </div>
+    
+
+    <!-- FOOTER -->
+    <footer class="footer">
+    <div class="info-bottom-left">
+      <p><a href="index.html">About</a></p>
+      <p><a href="apps.html">Apps</a></p>
+      <p><a href="art.html">Art</a></p>
+      <p><a href="https://schifano.github.io/blog/" target="blank">Blog</a></p>
+    </div>
+
+      <div class="info-bottom-right">
+        <h2>Rachel Schifano</h2>
+        <p><a href="https://linkedin.com/in/rschifano" target="blank">rschifano
+            <img src="images/icons/linkedin.png" width="15"></a></p>
+        <p><a href="https://twitter.com/rachelschifano" target="blank">rachelschifano
+            <img src="images/icons/twitter.png" width="15"></a></p>
+        <p><a href="https://github.com/schifano" target="blank">schifano
+            <img src="images/icons/github.png" width="15"></a></p>
+      </div>
+      </div>
+    </footer>
+
+    <!-- SCRIPTS -->
+    <script>
+        if ("ontouchstart" in document.documentElement) { 
+            document.querySelector(".hint").innerHTML = "<p>Tap on the left or right to navigate</p>";
+        }
+    </script>
+
+    <script src="public/js/impress.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="public/js/script.js"></script>
+
+</body>
+</html>

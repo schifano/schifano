@@ -1,4 +1,127 @@
-body {
+h1 {
+  font-weight: 500;
+  line-height: 0.80;
+  padding: 20px 10px 20px 0px;
+}
+
+/* TODO: When mobile, make title small */;
+
+html, body {
+  height: 100%;
+}
+
+
+footer {
+    background: white;
+    /*background: purple;*/
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 150px;
+    /*height: 30%;*/
+}
+
+.about {
+	margin: auto;
+	/*background-color: green;*/
+}
+.content {
+/*  width: 40%;
+  margin-left: auto;
+  margin-right: auto;
+  vertical-align: middle;*/
+  /*margin: auto;
+  position: absolute;
+  top: 0; left: 0; bottom: 0; right: 0;*/
+
+    margin: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+
+  width: 500px;
+  /*height: 100%;*/
+  background-color: green;
+}
+
+.outer-container-center {
+	display: table;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  /*background-color: green;*/
+}
+
+.middle-container {
+    display: table-cell;
+    vertical-align: middle;
+    /*background-color: blue;*/
+}
+
+.info-bottom-left {
+  position: absolute;
+  bottom: 20px;
+  left: 60px;
+  text-align: left;
+  text-transform: uppercase;
+}
+.info-bottom-right {
+  position: absolute;
+  bottom: 20px;
+  right: 60px;
+  text-align: right;
+}
+
+.left {
+  background-color: red;
+  float: left;
+  width: 50%;
+  overflow: hidden;
+  height: 100%;
+  margin: 0 auto;
+}
+.right {
+  background-color: blue;
+  float: left; /* very important */
+  width: 50%;
+  overflow: hidden;
+  height: 100%;
+  margin: 0 auto;
+}
+
+
+/* Pinterest */
+div.pinterest > span {
+  display: inline !important;
+}
+
+p.about {
+	font-size: 1.5em;
+}
+
+ul.about {
+  font-size: 1.2em;
+}
+
+/*body {
+  display: flex;
+  flex-direction: column;
+}
+.content {
+  flex: 1 0 auto;
+}*/
+
+/*footer {
+  background-color: #011;
+}*/
+
+
+
+
+/*body {
 	font-family: -apple-system, BlinkMacSystemFont, Helvetica, Arial, sans-serif;
 	font-weight: 100;
 	padding: 0;
@@ -17,7 +140,7 @@ h1, h2, h3, .subtitle {
 	font-weight: lighter;
 	color: gray;
 
-}
+}*/
 
 /*h1 {
 	font-weight: 100;
@@ -37,21 +160,21 @@ h3 {
 	color: gray;
 	font-weight: 100;
 }*/
-.subtitle {
+/*.subtitle {
 	font-size: 2.3em;
 	text-align: center;
 	margin: 5px;
-}
+}*/
 .no-bullet {
 	list-style: none;
 }
 
-p {
+/*p {
 	line-height: 90%;
 	text-align: center;
 	font-size: 15pt;
 	color: gray;
-}
+}*/
 .col-left {
   width: 40%;
   display: table-cell;
@@ -67,35 +190,3 @@ p {
   background-color: #f0f0f0;
   /* background-color: #44bb44; */ 
  }
-
-.grid {
-	padding: 10px;
-	color: black;
-	font-weight: normal;
-	text-align: center;
-}
-.project {
-	width: 50%;
-	height: 200px;
-}
-
-.red {
-	background-color: #ff0040;
-}
-
-/* Sections */
-#about {
-	padding: 20px;
-	width: 25%;
-	margin-left: auto;
-	margin-right: auto;
-}
-#projects {
-/*	background-color: #fff;*/
-	width: 100%;
-}
-
-/* Pinterest */
-div.pinterest > span {
-	display: inline !important;
-}
